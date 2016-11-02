@@ -64,7 +64,7 @@ stats.register("min", numpy.min)
 stats.register("max", numpy.max)
 
 NPOP = 50
-NGEN = 10
+NGEN = 100
 CXPB = 0.5
 MUTPB = 0.1
 
@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
     print toolbox.evaluate(hof[0])
     print hof[0]
-    
+
     best = tools.selBest(pop, 1)[0]
 
     renderer = CursesRenderer()
